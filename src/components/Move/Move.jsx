@@ -1,8 +1,8 @@
 import React from 'react'
 import './Move.css'
-import counselor from '../../assets/images/Counselor.svg'
-import man from '../../assets/images/Popular Man.svg'
-import money from '../../assets/images/Money Box.svg'
+import counselor from '../../assets/images/Counselor.png'
+import man from '../../assets/images/Popular Man.png'
+import money from '../../assets/images/Money Box.png'
 
 const Move = () => {
   return (

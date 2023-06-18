@@ -1,7 +1,7 @@
 import React from "react";
 import money from "../../assets/images/Stack of Money.png";
-import seller from "../../assets/images/Best Seller.svg";
-import support from "../../assets/images/Technical Support.svg";
+import seller from "../../assets/images/Best Seller.png";
+import support from "../../assets/images/Technical Support.png";
 import "./Features.css";
 
 const Features = () => {

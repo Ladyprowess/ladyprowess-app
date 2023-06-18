@@ -3,7 +3,7 @@ import "./Topmenu.css";
 import Sidebar from "./Sidebar";
 import { useNavigate, useLocation } from "react-router-dom";
 import SupportButton from "../Button/SupportButton";
-import logo from "../../assets/images/Logo.png";
+import logo from "../../assets/images/white-logo.png";
 
 function Topmenu() {
   const navigation = useNavigate();
@@ -44,7 +44,7 @@ function Topmenu() {
                     }
                     onClick={() => navigation("/about")}
                   >
-                    About Us
+                    About
                   </span>
                   <span
                     className={

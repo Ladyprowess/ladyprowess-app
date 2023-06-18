@@ -1,7 +1,7 @@
 import React from "react";
 import "./Goals.css";
-import goals from '../../assets/images/Goal.svg'
-import lens from '../../assets/images/Microsoft HoloLens.svg'
+import goals from '../../assets/images/Goal.png'
+import lens from '../../assets/images/Microsoft HoloLens.png'
 import woman from '../../assets/images/goals.png'
 import woman2 from '../../assets/images/Rectangle 9.png'
 

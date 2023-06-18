@@ -1,11 +1,11 @@
 import React from "react";
 import "./Services.css";
-import book from "../../assets/images/Book.svg";
-import ebook from "../../assets/images/Ebook.svg";
-import sourcecode from "../../assets/images/Source Code.svg";
-import searchbar from "../../assets/images/Search Bar.svg";
-import blog from "../../assets/images/Blogloving.svg";
-import vector from "../../assets/images/Vector.svg";
+import book from "../../assets/images/Book.png";
+import ebook from "../../assets/images/Ebook.png";
+import sourcecode from "../../assets/images/Source Code.png";
+import searchbar from "../../assets/images/Search Bar.png";
+import blog from "../../assets/images/Blogloving.png";
+import vector from "../../assets/images/Vector.png";
 
 const Services = () => {
   return (
