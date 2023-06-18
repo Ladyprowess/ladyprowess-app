@@ -1,0 +1,141 @@
+.goals__container {
+  display: flex;
+  margin-top: 20px;
+  background: #507b80;
+  color: #fff;
+}
+
+.goals__container--text,
+.goals__container--image {
+  width: 50%;
+}
+
+.goals__container--text {
+  padding: 0 20px 20px 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.goals__text--mission--container {
+  margin-bottom: 95px;
+}
+
+.goals__container--image {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.hide-on-laptop {
+  display: none;
+}
+
+.goals__aims--text img {
+  display: none;
+}
+
+/* TYPOGRAPHY */
+.goals__aims--text h3 {
+  font-size: 30px;
+}
+
+.goals__aims--text p {
+  font-size: 20px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 680px) {
+  .goals__container {
+    flex-direction: column-reverse;
+    margin-top: 30px;
+    gap: 30px;
+  }
+
+  .goals__container--text,
+  .goals__container--image {
+    width: 100%;
+  }
+
+  .goals__container--text {
+    padding: 20px 20px 40px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .goals__text--mission--container {
+    margin-bottom: 25px;
+  }
+
+  .goals__container--image {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .show-on-laptop {
+    display: none;
+  }
+
+  .hide-on-laptop {
+    display: block;
+  }
+
+  .goals__aims--text img {
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 15%;
+    margin-bottom: 10px;
+  }
+
+  /* TYPOGRAPHY */
+  .goals__aims--text h3 {
+    font-size: 22px;
+  }
+
+  .goals__aims--text p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 700px) {
+  .goals__container {
+    flex-direction: column-reverse;
+    margin-top: 50px;
+    gap: 40px;
+    padding: 20px 0;
+  }
+
+  .goals__container--text,
+  .goals__container--image {
+    width: 100%;
+  }
+
+  .goals__text--mission--container {
+    margin-bottom: 25px;
+  }
+
+  .goals__container--image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .show-on-laptop {
+    display: none;
+  }
+
+  .hide-on-laptop {
+    display: block;
+  }
+
+  /* TYPOGRAPHY */
+  .goals__aims--text h3 {
+    font-size: 27px;
+  }
+
+  .goals__aims--text p {
+    font-size: 18px;
+  }
+}

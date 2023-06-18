@@ -1,0 +1,101 @@
+.topBar {
+  background-color: transparent;
+  padding: 20px 0px;
+  width: 100%;
+}
+
+.displayDesktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.linksCont {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.linksContLink {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+}
+
+.linksContLinkActive {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #6beaf6;
+  cursor: pointer;
+  user-select: none;
+}
+
+.show_mobile {
+  display: none;
+}
+
+.show_desktop {
+  padding: 0 70px;
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.topbarbody img {
+  width: 80%;
+}
+
+.css-czfzdn-MuiButtonBase-root-MuiButton-root:hover {
+  background-color: #fff !important;
+}
+
+@media only screen and (max-width: 680px) {
+  .sideBarDrawer img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .show_mobile {
+    display: block;
+    width: 100%;
+    margin-bottom: 70px;
+  }
+
+  .show_desktop {
+    display: none;
+  }
+
+  .sideBarDrawer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+
+  .css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+    background-color: #507b80 !important;
+  }
+
+  .linksContLinkActive {
+    color: #fff;
+  }
+
+  .css-10hburv-MuiTypography-root {
+    font-family: "Proxima Nova Regular", Arial, sans-serif !important;
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 700px) {
+  .sideBarDrawer img {
+    width: 20%;
+  }
+}

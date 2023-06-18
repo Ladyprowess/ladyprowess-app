@@ -1,0 +1,125 @@
+.services__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+  padding: 50px 80px;
+}
+
+.services__container--bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+
+.services__icon-box {
+  background: rgba(80, 123, 128, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.services__icon--box img {
+  width: 80%;
+}
+
+.services__container--bottom__child {
+  border: 1px solid #507b80;
+  /* border-image: linear-gradient(
+    180deg,
+    #507b80 0%,
+    rgba(80, 123, 128, 0.3) 100%
+  ); */
+  /* border-image-slice: 1; */
+  border-radius: 7px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* TYPOGRAPHY */
+.services__container--top h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #507b80;
+}
+
+.services__container--top p {
+  font-size: 18px;
+}
+
+.services__container--bottom__child h3 {
+  color: #7c7c7c;
+  font-size: 22px;
+  margin-bottom: 7px;
+}
+
+.services__container--bottom__child p {
+  font-size: 16px;
+  color: #507b80;
+}
+
+@media only screen and (max-width: 680px) {
+  .services__container {
+    gap: 30px;
+    padding: 100px 20px;
+  }
+
+  .services__container--bottom {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 25px;
+  }
+
+  .services__icon-box {
+    width: 65px;
+    height: 65px;
+  }
+
+  .services__icon--box img {
+    width: 80%;
+  }
+
+  .services__container--bottom__child {
+    padding: 15px 20px;
+  }
+
+  /* TYPOGRAPHY */
+  .services__container--top h2 {
+    font-size: 25px;
+  }
+
+  .services__container--top p {
+    font-size: 16px;
+  }
+
+  .services__container--bottom__child h3 {
+    font-size: 18px;
+  }
+
+  .services__container--bottom__child p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 700px) {
+  .services__container {
+    padding: 70px 70px;
+  }
+
+  .services__container--bottom {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}

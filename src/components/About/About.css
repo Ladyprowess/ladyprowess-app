@@ -1,0 +1,184 @@
+.about__container {
+  display: flex;
+  gap: 45px;
+  justify-content: center;
+  padding: 100px 120px;
+}
+
+.about__container--description {
+  width: 50%;
+}
+
+.about__container--imagebox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.about__container--imagebox img {
+  width: 100%;
+}
+
+/* TYPOGRAPHY */
+.about__container--description h2 {
+  color: #507b80;
+  font-size: 28px;
+}
+
+.about__container--description p {
+  font-size: 19px;
+  margin: 15px 0;
+}
+
+.about__button__wrapper button {
+  border-radius: 5px;
+  background-color: #507b80;
+  color: #fff;
+  transition: all ease-in-out 0.8s;
+  font-size: 17px;
+  padding: 13px 18px;
+}
+
+.about__button__wrapper button:hover {
+  transform: scale(0.9);
+}
+
+/* ABOUT LADY STYLING */
+.aboutlady__container {
+  padding: 100px 130px 40px 130px;
+  display: flex;
+}
+
+.aboutlady__container--image,
+.aboutlady__container--text {
+  width: 50%;
+}
+
+.aboutlady__container--image {
+  display: flex;
+  gap: 20px;
+}
+
+.aboutlady__image--left {
+  margin-top: -35px;
+}
+
+.aboutlady__container--image img {
+  margin-bottom: 20px;
+}
+
+/* ABOUT LADY TYPOGRAPHY */
+.aboutlady__container--text h2 {
+  font-size: 27px;
+  margin-bottom: 10px;
+  color: #507b80;
+}
+
+.aboutlady__container--text p {
+  width: 566px;
+  font-size: 20px;
+  line-height: 36px;
+  color: #767676;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 680px) {
+  .about__container {
+    flex-direction: column;
+    gap: 25px;
+    padding: 80px 20px 40px 20px;
+  }
+
+  .about__container--description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__container--imagebox {
+    width: 100%;
+  }
+
+  .about__container--imagebox img {
+    width: 80%;
+  }
+
+  /* TYPOGRAPHY */
+  .about__container--description h2 {
+    font-size: 25px;
+  }
+
+  .about__container--description p {
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .about__button__wrapper button {
+    font-size: 16px;
+    padding: 13px 15px;
+  }
+
+  /* ABOUT LADY STYLING */
+  .aboutlady__container {
+    padding: 50px 20px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .aboutlady__container--image,
+  .aboutlady__container--text {
+    width: 100%;
+  }
+
+  .aboutlady__container--image {
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* ABOUT LADY TYPOGRAPHY */
+  .aboutlady__container--text h2 {
+    font-size: 23px;
+  }
+
+  .aboutlady__container--text p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 700px) {
+  .about__container {
+    gap: 30px;
+    padding: 70px 30px;
+  }
+
+  /* TYPOGRAPHY */
+  .about__container--description h2 {
+    font-size: 24px;
+  }
+
+  .about__container--description p {
+    font-size: 16px;
+  }
+
+  /* ABOUT LADY STYLING */
+  .aboutlady__container {
+    padding: 60px 20px;
+    gap: 30px;
+  }
+
+  /* ABOUT LADY TYPOGRAPHY */
+  .aboutlady__container--text h2 {
+    font-size: 23px;
+  }
+
+  .aboutlady__container--text p {
+    width: 100%;
+    font-size: 16px;
+  }
+}

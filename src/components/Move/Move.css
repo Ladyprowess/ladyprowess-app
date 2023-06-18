@@ -1,0 +1,145 @@
+.move__container {
+  padding: 90px 80px;
+  display: flex;
+  gap: 40px;
+  margin: 10px 0;
+  background: #ededed;
+}
+
+.move__text,
+.move__slides {
+  width: 50%;
+}
+
+.move__text {
+  padding-right: 100px;
+}
+
+.move__slides {
+  display: flex;
+  gap: 20px;
+}
+
+.move__slides--child {
+  background: #fefefe;
+  border-radius: 11.25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 35px;
+  width: 225px;
+}
+
+.move__slides--child img {
+  width: 60%;
+}
+
+/* TYPOGRAPHY */
+.move__text h2 {
+  color: #507b80;
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+
+.move__text p {
+  font-size: 19px;
+  color: #767676;
+}
+.move__slides--child p {
+  color: #7c7c7c;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 680px) {
+  .move__container {
+    padding: 40px 20px;
+    flex-direction: column;
+    gap: 40px;
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  .move__text,
+  .move__slides {
+    width: 100%;
+  }
+
+  .move__text {
+    padding-right: 0;
+  }
+
+  .move__slides {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .move__slides--child {
+    padding: 10px 25px;
+    width: 65%;
+  }
+
+  .move__slides--child img {
+    width: 40%;
+  }
+
+  /* TYPOGRAPHY */
+  .move__text h2 {
+    font-size: 24px;
+  }
+
+  .move__text p {
+    font-size: 16px;
+  }
+  .move__slides--child p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 700px) {
+  .move__container {
+    padding: 60px 20px;
+    margin: 30px 0;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .move__text,
+  .move__slides {
+    width: 50%;
+  }
+
+  .move__text {
+    padding-right: 50px;
+  }
+
+  .move__slides {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+
+  .move__slides--child {
+    padding: 10px 35px;
+    width: 100%;
+  }
+
+  .move__slides--child img {
+    width: 60%;
+  }
+
+  /* TYPOGRAPHY */
+  .move__text h2 {
+    font-size: 25px;
+  }
+
+  .move__text p {
+    font-size: 17px;
+  }
+}

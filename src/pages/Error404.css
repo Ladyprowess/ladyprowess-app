@@ -1,0 +1,43 @@
+.error404__container {
+    padding: 200px 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(0deg, rgba(80, 123, 128, 0.5), rgba(80, 123, 128, 0.5)), url(/src/assets/images/young-african-businessman-working-office-laptop-make-notice-notebook\ 1.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .error404__container h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    line-height: 1.35;
+    text-align: center;
+  }
+  
+  .error404__container p {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (max-width: 680px) {
+    .error404__container {
+      padding: 70px 20px;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .error404__container h2 {
+      font-size: 32px;
+    }
+  
+    .error404__container p {
+      font-size: 18px;
+    }
+  }

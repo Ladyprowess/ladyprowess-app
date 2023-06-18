@@ -1,0 +1,21 @@
+.button__wrapper button{
+    border-radius: 5px;
+    background-color: #fff;
+    color: #507B80;
+    transition: all ease-in-out 0.8s;
+    font-size: 20px;
+    padding: 15px 20px;
+}
+
+.button__wrapper button:hover {
+    transform: scale(0.9);
+    background-color: #507B80;
+    color: #fff;
+}
+
+@media only screen and (max-width: 680px) {
+    .button__wrapper button{
+        font-size: 16px;
+        padding: 13px 15px;
+    }
+}
