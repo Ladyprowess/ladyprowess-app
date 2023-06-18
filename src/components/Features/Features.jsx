@@ -1,5 +1,5 @@
 import React from "react";
-import money from "../../assets/images/Stack of Money.svg";
+import money from "../../assets/images/Stack of Money.png";
 import seller from "../../assets/images/Best Seller.svg";
 import support from "../../assets/images/Technical Support.svg";
 import "./Features.css";

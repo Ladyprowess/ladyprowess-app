@@ -10,7 +10,7 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 import "./Footer.css";
-import Logo from "../../assets/images/Logo 2.svg";
+import Logo from "../../assets/images/Logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

@@ -3,7 +3,7 @@ import "./Topmenu.css";
 import Sidebar from "./Sidebar";
 import { useNavigate, useLocation } from "react-router-dom";
 import SupportButton from "../Button/SupportButton";
-import logo from "../../assets/images/Logo 1.svg";
+import logo from "../../assets/images/Logo.png";
 
 function Topmenu() {
   const navigation = useNavigate();

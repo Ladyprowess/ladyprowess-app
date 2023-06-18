@@ -6,7 +6,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import { IoMdMenu } from "react-icons/io";
-import logo from '../../assets/images/Logo 1.svg'
+import logo from '../../assets/images/Logo.png'
 
 import './Topmenu.css'
 import {useNavigate, useLocation} from 'react-router-dom'
