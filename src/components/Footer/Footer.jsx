@@ -28,12 +28,12 @@ const Footer = () => {
               <Link to="/">FAQ</Link>
               <Link to="/">Help Center</Link>
               <a
-                    href="https://ladyprowessblog.com.ng/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Blog
-                  </a>
+                href="https://ladyprowessblog.com.ng/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Blog
+              </a>
             </div>
             <div className="footer__links--small">
               <Link to="/">Content Marketing</Link>
@@ -44,19 +44,35 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer__links--social">
-            <a href="http://" target='_blank' rel="noreferrer">
+            <a
+              href="http://http://facebook.com/ladyprowess"
+              target="_blank"
+              rel="noreferrer"
+            >
               <BsFacebook size={20} className="footer__icon" />
             </a>
-            <a href="https://twitter.com/ladyprowess" target='_blank' rel="noreferrer">
+            <a
+              href="https://twitter.com/ladyprowess"
+              target="_blank"
+              rel="noreferrer"
+            >
               <BsTwitter size={20} className="footer__icon" />
             </a>
-            <a href="https://www.instagram.com/ladyprowess/" target='_blank' rel="noreferrer">
+            <a
+              href="https://www.instagram.com/ladyprowess/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <BsInstagram size={20} className="footer__icon" />
             </a>
-            <a href="https://www.linkedin.com/in/peace-ngozi-okafor-7548b2144/" target='_blank' rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/in/peace-ngozi-okafor-7548b2144/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <BsLinkedin size={20} className="footer__icon" />
             </a>
-            <a href="mailto:Okaforpeacee@gmail.com">
+            <a href="mailto:admin@ladyprowess.com.ng">
               <AiOutlineMail size={20} className="footer__icon" />
             </a>
             <a href="tel:+234-816-217-4443">
