@@ -21,13 +21,16 @@ const AboutLady = () => {
       <div className="aboutlady__container--text">
         <h2>About the Company</h2>
         <p>
-          Keep in mind that the client knows best. Put your brain to work in the
-          shower if you want to be a genius. After that, leave the house, work,
-          and serve the client. For us, every piece of content has the potential
-          to make an impact, and we are committed to helping you achieve your
-          goals through the power of words. Contact us today to learn more about
-          how we can help you improve your online presence and reach your target
-          audience.
+          Welcome to Lady Prowess, your go-to destination for exceptional
+          content writing services! At Lady Prowess, we take pride in our
+          ability to deliver outstanding content that meets and exceeds your
+          expectations. Our team of skilled writers possesses the expertise and
+          creativity to provide you with compelling and engaging written
+          materials across various domains. At Lady Prowess, we are passionate
+          about delivering exceptional content that helps you achieve your
+          goals. Our commitment to quality, creativity, and customer
+          satisfaction sets us apart. Contact us today, and let us elevate your
+          brand's presence with our premium content writing services.
         </p>
       </div>
     </div>

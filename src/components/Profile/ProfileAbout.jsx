@@ -1,10 +1,10 @@
 import React from "react";
 import "./ProfileAbout.css";
-import rectangle54 from "../../assets/images/Rectangle 54.png";
-import image1 from "../../assets/images/image 1.png";
+import rectangle54 from "../../assets/images/lady1.jpg";
+import image1 from "../../assets/images/lady3.jpg";
 
 import { BiMailSend } from "react-icons/bi";
-import { BsGithub, BsLinkedin, BsTwitter, BsWhatsapp } from "react-icons/bs";
+import { BsGithub, BsInstagram, BsLinkedin, BsTwitter, BsWhatsapp } from "react-icons/bs";
 import { AiOutlineDownload } from "react-icons/ai";
 
 const ProfileAbout = () => {
@@ -29,24 +29,27 @@ const ProfileAbout = () => {
 
           <div className="profile__resume">
             <div className="profile__resume--socials">
-              <a href="mailto:">
+              <a href="mailto:Okaforpeacee@gmail.com">
                 <BiMailSend size={25} fill="#507B80"/>
               </a>
-              <a href="http://" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/peace-ngozi-okafor-7548b2144/" target="_blank" rel="noreferrer">
                 <BsLinkedin size={25}  fill="#507B80"/>
               </a>
-              <a href="http://" target="_blank" rel="noreferrer">
+              <a href="https://twitter.com/ladyprowess" target="_blank" rel="noreferrer">
                 <BsTwitter size={25} fill="#507B80"/>
               </a>
-              <a href="http://" target="_blank" rel="noreferrer">
+              <a href="https://www.instagram.com/ladyprowess/" target='_blank' rel="noreferrer">
+              <BsInstagram size={25} fill="#507B80" />
+            </a>
+              <a href="https://github.com/Ladyprowess" target="_blank" rel="noreferrer">
                 <BsGithub size={25}  fill="#507B80"/>
               </a>
-              <a href="http://" target="_blank" rel="noreferrer">
+              {/* <a href="http://" target="_blank" rel="noreferrer">
                 <BsWhatsapp size={25} fill="#507B80"/>
-              </a>
+              </a> */}
             </div>
             <div className="profile__resume--cv">
-              <a href="http://" target="_blank" rel="noreferrer">
+              <a href="https://docs.google.com/presentation/d/1lwMAbsPkRhlgkSdhHYYM5km7zNd6bN2kM49rUV8xeCw/edit#slide=id.gc6f80d1ff_0_0" target="_blank" rel="noreferrer">
                 <AiOutlineDownload size={20} fill="#507B80"/>My Résumé
               </a>
             </div>

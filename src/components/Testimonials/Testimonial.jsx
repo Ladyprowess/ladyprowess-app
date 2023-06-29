@@ -9,8 +9,7 @@ import "react-multi-carousel/lib/styles.css";
 
 const Testimonial = () => {
   return (
-    <div className="testimonial__container" >
-        
+    <div className="testimonial__container">
       <Carousel
         additionalTransfrom={0}
         arrows
@@ -64,13 +63,12 @@ const Testimonial = () => {
         slidesToSlide={1}
         swipeable
       >
-      
         <div className="testimonial__box">
           <div className="testimonial__box--top">
-            <img src={natasha1} alt="Testimonial from a client" />
+            {/* <img src={natasha1} alt="Testimonial from a client" /> */}
             <div className="testimonial__box-name">
-              <p>Natasha</p>
-              <span>Web Developer</span>
+              <p>Mark</p>
+              <span>Small Business Owner</span>
             </div>
           </div>
           <div className="testimonial__box--text">
@@ -82,17 +80,19 @@ const Testimonial = () => {
               <BsStarFill fill="#F9D978" size={15} />
             </div>
             <p>
-              To create compelling and engaging content that informs, educates,
-              and inspires our audience while meeting the needs of our clients.
+              "Lady Prowess has been a game-changer for my business! Their
+              content writing services have significantly boosted my online
+              presence. The quality of their work is exceptional, and their
+              attention to detail is impeccable. I highly recommend them!"
             </p>
           </div>
         </div>
         <div className="testimonial__box">
           <div className="testimonial__box--top">
-            <img src={natasha2} alt="Testimonial from a client" />
+            {/* <img src={natasha2} alt="Testimonial from a client" /> */}
             <div className="testimonial__box-name">
-              <p>Natasha</p>
-              <span>Web Developer</span>
+              <p>Emma</p>
+              <span>Blogger</span>
             </div>
           </div>
           <div className="testimonial__box--text">
@@ -104,17 +104,20 @@ const Testimonial = () => {
               <BsStarHalf fill="#F9D978" size={15} />
             </div>
             <p>
-              To create compelling and engaging content that informs, educates,
-              and inspires our audience while meeting the needs of our clients.
+              "Working with Lady Prowess has been an absolute pleasure. Their
+              team of writers understood my vision perfectly and created
+              engaging blog posts that aligned perfectly with my brand. The
+              level of professionalism and timely delivery of their services is
+              unmatched. I couldn't be happier!"
             </p>
           </div>
         </div>
         <div className="testimonial__box">
           <div className="testimonial__box--top">
-            <img src={natasha3} alt="Testimonial from a client" />
+            {/* <img src={natasha3} alt="Testimonial from a client" /> */}
             <div className="testimonial__box-name">
-              <p>Natasha</p>
-              <span>Web Developer</span>
+              <p>John</p>
+              <span>University Student</span>
             </div>
           </div>
           <div className="testimonial__box--text">
@@ -126,17 +129,20 @@ const Testimonial = () => {
               <BsStarFill fill="#F9D978" size={15} />
             </div>
             <p>
-              To create compelling and engaging content that informs, educates,
-              and inspires our audience while meeting the needs of our clients.
+              "I am extremely impressed with Lady Prowess' academic writing
+              services. They helped me with my research paper, and the result
+              was outstanding. The writer was knowledgeable in my subject area
+              and delivered a well-structured and thoroughly researched paper. I
+              will definitely be using their services again!"
             </p>
           </div>
         </div>
         <div className="testimonial__box">
           <div className="testimonial__box--top">
-            <img src={natasha3} alt="Testimonial from a client" />
+            {/* <img src={natasha3} alt="Testimonial from a client" /> */}
             <div className="testimonial__box-name">
-              <p>Natasha</p>
-              <span>Web Developer</span>
+              <p>Feyijimi</p>
+              <span>Director of ERIN</span>
             </div>
           </div>
           <div className="testimonial__box--text">
@@ -148,17 +154,21 @@ const Testimonial = () => {
               <BsStarHalf fill="#F9D978" size={15} />
             </div>
             <p>
-              To create compelling and engaging content that informs, educates,
-              and inspires our audience while meeting the needs of our clients.
+              I highly recommend LadyProwess for your Technical Writing
+              projects. They are exceptional writers with an impressive ability
+              to simplify complex technical information into clear and concise
+              language that is easily understandable to any audience. Their
+              attention to details and ability to research complex topics to
+              create engaging content are truly impressive.
             </p>
           </div>
         </div>
         <div className="testimonial__box">
           <div className="testimonial__box--top">
-            <img src={natasha1} alt="Testimonial from a client" />
+            {/* <img src={natasha1} alt="Testimonial from a client" /> */}
             <div className="testimonial__box-name">
-              <p>Natasha</p>
-              <span>Web Developer</span>
+              <p>Smidh Vadera </p>
+              <span>Co-Founder at ICON TECHSOFT PVT. LTD.</span>
             </div>
           </div>
           <div className="testimonial__box--text">
@@ -170,8 +180,11 @@ const Testimonial = () => {
               <BsStarFill fill="#F9D978" size={15} />
             </div>
             <p>
-              To create compelling and engaging content that informs, educates,
-              and inspires our audience while meeting the needs of our clients.
+              It was an absolute pleasure working with the LadyProwess team. I
+              couldn't have asked for a better collaborator on this project.
+              Their professionalism and expertise were evident throughout the
+              entire process. Not only did they deliver exceptional results, but
+              they also did so with remarkable speed and efficiency.
             </p>
           </div>
         </div>

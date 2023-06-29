@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Topmenu.css";
 import Sidebar from "./Sidebar";
 import { useNavigate, useLocation } from "react-router-dom";
 import SupportButton from "../Button/SupportButton";
-import logo from "../../assets/images/white-logo.png";
+import logo from "../../assets/images/Logo2.png";
 
 function Topmenu() {
   const navigation = useNavigate();
@@ -66,7 +66,7 @@ function Topmenu() {
                   >
                     Resources
                   </span>
-                  <span
+                  {/* <span
                     className={
                       location.pathname === ""
                         ? "linksContLinkActive"
@@ -75,7 +75,15 @@ function Topmenu() {
                     onClick={() => navigation("/")}
                   >
                     Blog
-                  </span>
+                  </span> */}
+                  <a
+                    href="https://ladyprowessblog.com.ng/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Blog
+                  </a>
+
                   <SupportButton
                     type="button"
                     txtColor="#507B80"
@@ -84,11 +92,9 @@ function Topmenu() {
                     fs="14px"
                     w="120px"
                     bg="#fff"
-                    
                     txt="Support Us"
-                    
                     border="0px solid white"
-                    onClick={() => {}}
+                    
                   />
                 </div>
               </div>

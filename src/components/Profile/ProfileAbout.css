@@ -1,7 +1,7 @@
 .profileabout__container {
   display: flex;
   flex-direction: column;
-  gap: 70px;
+  gap: 90px;
   padding: 60px 80px;
 }
 
@@ -10,6 +10,12 @@
   display: flex;
   gap: 30px;
 }
+
+
+.profile__container--bottom  {
+  align-items: center;
+}
+
 
 .profile__resume {
   display: flex;
@@ -146,7 +152,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 700px) {
+@media screen and (max-width: 1024px) and (min-width: 681px) {
   .profileabout__container {
     padding: 60px 30px;
   }

@@ -10,7 +10,7 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 import "./Footer.css";
-import Logo from "../../assets/images/white-logo.png";
+import Logo from "../../assets/images/Logo2.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -27,11 +27,17 @@ const Footer = () => {
               <Link to="/">Services</Link>
               <Link to="/">FAQ</Link>
               <Link to="/">Help Center</Link>
-              <Link to="/">Blog</Link>
+              <a
+                    href="https://ladyprowessblog.com.ng/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Blog
+                  </a>
             </div>
             <div className="footer__links--small">
               <Link to="/">Content Marketing</Link>
-              <Link to="/">Technical Writing</Link>
+              <Link to="/">Academic Writing</Link>
               <Link to="/">White Papers</Link>
               <Link to="/">SEO Management</Link>
               <Link to="/">Custom Services</Link>
@@ -41,19 +47,19 @@ const Footer = () => {
             <a href="http://" target='_blank' rel="noreferrer">
               <BsFacebook size={20} className="footer__icon" />
             </a>
-            <a href="http://" target='_blank' rel="noreferrer">
+            <a href="https://twitter.com/ladyprowess" target='_blank' rel="noreferrer">
               <BsTwitter size={20} className="footer__icon" />
             </a>
-            <a href="http://" target='_blank' rel="noreferrer">
+            <a href="https://www.instagram.com/ladyprowess/" target='_blank' rel="noreferrer">
               <BsInstagram size={20} className="footer__icon" />
             </a>
-            <a href="http://" target='_blank' rel="noreferrer">
+            <a href="https://www.linkedin.com/in/peace-ngozi-okafor-7548b2144/" target='_blank' rel="noreferrer">
               <BsLinkedin size={20} className="footer__icon" />
             </a>
-            <a href="mailto:">
+            <a href="mailto:Okaforpeacee@gmail.com">
               <AiOutlineMail size={20} className="footer__icon" />
             </a>
-            <a href="tel:+">
+            <a href="tel:+234-816-217-4443">
               <BsTelephone size={20} className="footer__icon" />
             </a>
           </div>

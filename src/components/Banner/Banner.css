@@ -76,7 +76,7 @@
 /* MEDIA QUERIES */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 700px) {
 
     .banner__container {
         height: 100vh;
@@ -101,7 +101,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 700px) {
+@media screen and (max-width: 1024px) and (min-width: 681px) {
     /* TYPOGRAPHY */
     .banner__container--description h1 {
         font-size: 45px;
@@ -110,5 +110,9 @@
     
     .banner__container--description p {
         font-size: 21px;
+    }
+
+    .profilebanner__container {
+        height: 50vh;
     }
 }
