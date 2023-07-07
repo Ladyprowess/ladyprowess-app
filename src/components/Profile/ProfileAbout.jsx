@@ -29,7 +29,7 @@ const ProfileAbout = () => {
 
           <div className="profile__resume">
             <div className="profile__resume--socials">
-              <a href="admin@ladyprowess.com.ng">
+              <a href="mailto:admin@ladyprowess.com.ng">
                 <BiMailSend size={25} fill="#507B80" />
               </a>
               <a

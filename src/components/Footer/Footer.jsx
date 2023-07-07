@@ -40,7 +40,7 @@ const Footer = () => {
               <Link to="/services/academic-writing">Academic Writing</Link>
               <Link to="/services/blog-post">Blog Post</Link>
               <Link to="/services/seo-management">SEO Management</Link>
-              <Link to="/services/custome-services">Custom Services</Link>
+              <Link to="/services/custom-services">Custom Services</Link>
             </div>
           </div>
           <div className="footer__links--social">
