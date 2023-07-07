@@ -9,7 +9,7 @@ const Services = () => {
 
   return (
     <div className="services__container">
-      <div className="services__container--top">
+      <div className="services__container__top">
         <h2>Services</h2>
         <p>
           Our content writing brand offers a wide range of services to help
