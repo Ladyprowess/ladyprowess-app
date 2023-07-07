@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 import { useNavigate, useLocation } from "react-router-dom";
 import SupportButton from "../Button/SupportButton";
 import logo from "../../assets/images/Logo2.png";
-
+import DropdownMenu from '../DropdownMenu/DropdownMenu'
 function Topmenu() {
   const navigation = useNavigate();
   let location = useLocation();
@@ -46,6 +46,9 @@ function Topmenu() {
                   >
                     About
                   </span>
+
+                    <DropdownMenu />
+
                   <span
                     className={
                       location.pathname === "/profile"
@@ -56,16 +59,7 @@ function Topmenu() {
                   >
                     Profile
                   </span>
-                  <span
-                    className={
-                      location.pathname === ""
-                        ? "linksContLinkActive"
-                        : "linksContLink"
-                    }
-                    onClick={() => navigation("/")}
-                  >
-                    Resources
-                  </span>
+                 
                   {/* <span
                     className={
                       location.pathname === ""

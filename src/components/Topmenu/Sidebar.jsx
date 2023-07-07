@@ -11,6 +11,7 @@ import logo from "../../assets/images/Logo2.png";
 import "./Topmenu.css";
 import { useNavigate, useLocation } from "react-router-dom";
 import SupportButton from "../Button/SupportButton";
+import DropDownMenu from "../DropdownMenu/DropdownMenu";
 
 const useStyles = makeStyles({
   list: {
@@ -102,6 +103,11 @@ export default function Sidebar() {
           </ListItemText>
         </ListItem>
 
+        <ListItem>
+         <DropDownMenu/>
+        </ListItem>    
+        
+
         <ListItem
           onClick={toggleDrawer(anchor, false)}
           onKeyDown={toggleDrawer(anchor, false)}
@@ -118,19 +124,7 @@ export default function Sidebar() {
           </ListItemText>
         </ListItem>
 
-        <ListItem
-          onClick={toggleDrawer(anchor, false)}
-          onKeyDown={toggleDrawer(anchor, false)}
-        >
-          <ListItemText
-            onClick={() => navigation("")}
-            className={
-              location.pathname === "" ? "linksContLinkActive" : "linksContLink"
-            }
-          >
-            Resources
-          </ListItemText>
-        </ListItem>
+       
 
         {/* <Divider /> */}
 

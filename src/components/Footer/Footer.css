@@ -201,6 +201,10 @@ form button:hover {
   .footer__copyright h3 {
     font-size: 14px;
   }
+
+  .modal__icon {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 681px) {

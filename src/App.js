@@ -8,6 +8,13 @@ import Home from './pages/Home'
 import Profile from "./pages/Profile";
 import ScrollToTop from "./components/Scroll/ScrollToTop";
 import Error404 from "./pages/Error404";
+import BlogPost from "./pages/BlogPost";
+import ContentMarketing from "./pages/ContentMarketing";
+import CustomServices from "./pages/CustomServices";
+import TechnicalWriting from "./pages/TechnicalWriting";
+import AcademicWriting from './pages/AcademicWriting'
+import SeoManagement from './pages/SeoManagement'
+
 
 function App() {
   return (
@@ -18,6 +25,12 @@ function App() {
       <Route exact path="/" element={<Home />} />
       <Route exact path="/about" element={<About />} />
       <Route exact path="/profile" element={<Profile />} />
+      <Route exact path="/services/academic-writing" element={<AcademicWriting />} />
+      <Route exact path="/services/blog-post" element={<BlogPost />} />
+      <Route exact path="/services/content-marketing" element={<ContentMarketing />} />
+      <Route exact path="/services/custom-services" element={<CustomServices />} />
+      <Route exact path="/services/seo-management" element={<SeoManagement />} />
+      <Route exact path="/services/technical-writing" element={<TechnicalWriting />} />
       <Route exact path="*" element={<Error404 />} />
       </Routes>
      </Router>

@@ -36,11 +36,11 @@ const Footer = () => {
               </a>
             </div>
             <div className="footer__links--small">
-              <Link to="/">Content Marketing</Link>
-              <Link to="/">Academic Writing</Link>
-              <Link to="/">White Papers</Link>
-              <Link to="/">SEO Management</Link>
-              <Link to="/">Custom Services</Link>
+              <Link to="/services/content-marketing">Content Marketing</Link>
+              <Link to="/services/academic-writing">Academic Writing</Link>
+              <Link to="/services/blog-post">Blog Post</Link>
+              <Link to="/services/seo-management">SEO Management</Link>
+              <Link to="/services/custome-services">Custom Services</Link>
             </div>
           </div>
           <div className="footer__links--social">
@@ -81,7 +81,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer__form">
-          <h3>Let us know how we can help today</h3>
+          <h3>Subscribe to our Newsletter</h3>
 
           <FooterForm />
         </div>

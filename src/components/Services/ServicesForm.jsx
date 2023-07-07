@@ -1,23 +1,65 @@
-import React, { useState } from "react";
-import PhoneInput from "react-phone-number-input";
+import React, { useState, useRef } from "react";
+// import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
+import emailjs from "@emailjs/browser";
+import Modal from "@mui/material/Modal";
+import Box from "@mui/material/Box";
+import Backdrop from "@mui/material/Backdrop";
+import Fade from "@mui/material/Fade";
 
-const ServicesForm = ({ selectedService, selectedServiceDescription }) => {
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 600,
+  height: 410,
+  bgcolor: "#fff",
+  border: "1px solid #ccc",
+  borderRadius: 2,
+  outline: "none",
+  p: 6,
+  overflowY: "auto", // Enable vertical scroll if content overflows
+  maxHeight: "80vh",
+  display: "flex",
+  flexDirection: "column",
+  gap: "10px",
+  alignItems: "center",
 
-    const [formData, setFormData] = useState({
+  // Set maximum height to 80% of viewport height
+
+  "@media (max-width: 768px)": {
+    width: "90%",
+    p: 2,
+    maxHeight: "90vh",
+  },
+
+  "@media (max-width: 576px)": {
+    width: "90%",
+    maxHeight: "95vh", // Adjust maximum height for even smaller screens
+  },
+};
+
+const ServicesForm = () => {
+  const form = useRef();
+
+  // Modal State Variables
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+  const [selectedOption, setSelectedOption] = useState('')
+
+  const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
-    phoneNumber: '',
     message: "",
   });
-
 
   const [errors, setErrors] = useState({
     firstName: "",
     lastName: "",
     email: "",
-    phoneNumber: '',
     message: "",
   });
 
@@ -30,12 +72,16 @@ const ServicesForm = ({ selectedService, selectedServiceDescription }) => {
     }));
   };
 
-  const handlePhoneChange = (value) => {
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      phoneNumber: value
-    }));
-  };
+  const handleOnChangeSelect = (e) => {
+    setSelectedOption(e.target.value)
+  }
+
+  // const handlePhoneChange = (value) => {
+  //   setFormData((prevFormData) => ({
+  //     ...prevFormData,
+  //     phoneNumber: value
+  //   }));
+  // };
 
   const validateForm = () => {
     let isValid = true;
@@ -43,7 +89,6 @@ const ServicesForm = ({ selectedService, selectedServiceDescription }) => {
       firstName: "",
       lastName: "",
       email: "",
-      phoneNumber: "",
       message: "",
     };
 
@@ -68,14 +113,6 @@ const ServicesForm = ({ selectedService, selectedServiceDescription }) => {
       isValid = false;
     }
 
-    // Validate phone number
-    if (formData.phoneNumber.trim() === "") {
-      newErrors.phoneNumber = "Phone number is required";
-      isValid = false;
-    } else if (!isValidPhoneNumber(formData.phoneNumber)) {
-      newErrors.phoneNumber = "Invalid phone number format";
-      isValid = false;
-    }
 
     // Validate message
     if (formData.message.trim() === "") {
@@ -93,41 +130,30 @@ const ServicesForm = ({ selectedService, selectedServiceDescription }) => {
     return emailRegex.test(email);
   };
 
-  const isValidPhoneNumber = (phoneNumber) => {
-    // Phone number validation logic
-    const phoneRegex = /^\d{10}$/; // Assumes 10-digit phone number
-    return phoneRegex.test(phoneNumber);
-  };
-
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
+
     if (validateForm()) {
-      // Form submission logic
-      console.log("Form submitted successfully");
-      // Reset the form
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phoneNumber: "",
-        message: "",
-      });
-      setErrors({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phoneNumber: "",
-        message: "",
-      });
+      emailjs
+        .sendForm(
+          "service_18s3g9t",
+          "template_a9nubym",
+          form.current,
+          "OCH_euBrk2E-NK4qn"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="services__form--container">
-      <div className="services__form--description">
-        <h2>Contact us for {selectedService}</h2>
-        <p>{selectedServiceDescription}</p>
-      </div>
+    <form onSubmit={sendEmail} className="services__form__container" ref={form}>
       <div className="services__form--input">
         <div className="services__input">
           <p>First Name</p>
@@ -162,15 +188,8 @@ const ServicesForm = ({ selectedService, selectedServiceDescription }) => {
           />
           {errors.email && <span>{errors.email}</span>}
         </div>
-        <div className="services__input">
+        {/* <div className="services__input">
           <p>Phone Number</p>
-          {/* <input
-          type="tel"
-          name="phoneNumber"
-          value={formData.phoneNumber}
-          onChange={handleOnChange}
-        /> */}
-
           <PhoneInput
             international
             countryCallingCodeEditable={false}
@@ -179,6 +198,26 @@ const ServicesForm = ({ selectedService, selectedServiceDescription }) => {
             onChange={handlePhoneChange}
           />
           {errors.phoneNumber && <span>{errors.phoneNumber}</span>}
+        </div> */}
+
+        <div className="services__input">
+          <p>
+            What Service?
+            <select
+              name="service"
+              value={selectedOption}
+              onChange={handleOnChangeSelect}
+              className="styled-select"
+            >
+              <option value="">Select a Service</option>
+              <option value="Content Marketing">Content Marketing</option>
+              <option value="Academic Writing">Academic Writing</option>
+              <option value="Technical Writing">Technical Writing</option>
+              <option value="SEO Management">SEO Management</option>
+              <option value="Blog Post">Blog Post</option>
+              <option value="Custom Services">Custom Services</option>
+            </select>
+          </p>
         </div>
 
         <div className="services__input">
@@ -191,7 +230,65 @@ const ServicesForm = ({ selectedService, selectedServiceDescription }) => {
           {errors.message && <span>{errors.message}</span>}
         </div>
       </div>
-      <button type="submit">Submit</button>
+      <button type="submit" onClick={handleOpen}>
+        Submit
+      </button>
+
+      <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        open={open}
+        onClose={handleClose}
+        closeAfterTransition
+        slots={{ backdrop: Backdrop }}
+        slotProps={{
+          backdrop: {
+            timeout: 500,
+          },
+        }}
+      >
+        <Fade in={open}>
+          <Box sx={style}>
+            <p
+              style={{
+                fontSize: "70px",
+              }}
+              className='modal__icon'>
+              🎉
+            </p>
+            <p
+              style={{
+                fontSize: "20px",
+              }}
+            >
+              Thank you for contacting us!
+            </p>
+            <p
+              style={{
+                fontSize: "16px",
+                textAlign: "center",
+                lineHeight: "35px",
+                marginBottom: "20px",
+              }}
+            >
+              One of our customer agents will reach out to schedule a call with
+              you. Talk to you soon. Cheers!
+            </p>
+            <button
+              onClick={handleClose}
+              style={{
+                backgroundColor: "#507b80",
+                color: "#eee",
+                padding: "12px 20px",
+                fontSize: "16px",
+                borderRadius: "5px",
+              }}
+            >
+              OK
+            </button>
+          </Box>
+        </Fade>
+      </Modal>
     </form>
   );
 };

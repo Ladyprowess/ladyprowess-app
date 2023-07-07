@@ -127,12 +127,12 @@ input::-webkit-inner-spin-button {
 }
 
 ::-moz-selection {
-  background: rgb(110, 240, 110);
+  background: #507b80;
   text-shadow: none;
 }
 
 ::selection {
-  background: rgb(110, 240, 110);
+  background: #507b80;
   text-shadow: none;
 }
 
@@ -176,7 +176,9 @@ ul,
 li,
 address,
 textarea,
-span {
+span,
+select,
+table {
   /* font-family: 'Proxima Nova Regular', Arial, sans-serif; */
   font-family: 'Proxima Nova', Arial, sans-serif;
   font-weight: 300;
@@ -197,9 +199,7 @@ button {
 
 
 @media screen and (max-width: 680px) {
-  section {
-    padding: 50px 20px;
-  }
+
 
   p {
     line-height: 22px;
@@ -208,9 +208,7 @@ button {
 }
 
 @media screen and (max-width: 1000px) and (min-width: 700px) {
-  section {
-    padding: 50px 40px;
-  }
+  
 
   p {
     line-height: 1.6;

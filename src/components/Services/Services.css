@@ -7,7 +7,7 @@
   padding: 50px 80px;
 }
 
-.services__container--bottom {
+.services__container__bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -15,7 +15,7 @@
   grid-row-gap: 30px;
 }
 
-.services__icon-box {
+.services__icon_box {
   background: rgba(80, 123, 128, 0.3);
   display: flex;
   align-items: center;
@@ -27,11 +27,11 @@
   margin-bottom: 10px;
 }
 
-.services__icon--box img {
+.services__icon__box img {
   width: 80%;
 }
 
-.services__container--bottom__child {
+.services__container__bottom__child {
   border: 1px solid #507b80;
   border-radius: 7px;
   padding: 15px 20px;
@@ -42,60 +42,54 @@
 }
 
 /* TYPOGRAPHY */
-.services__container--top h2 {
+.services__container__top h2 {
   font-size: 28px;
   margin-bottom: 10px;
   color: #507b80;
 }
 
-.services__container--top p {
+.services__container__top p {
   font-size: 18px;
 }
 
-.services__container--bottom__child h3 {
+.services__container__bottom__child h3 {
   color: #7c7c7c;
   font-size: 22px;
   margin-bottom: 7px;
 }
 
-.services__container--bottom__child p {
+.services__container__bottom__child p {
   font-size: 16px;
   color: #507b80;
 }
 
-
 /* SERVICES FORM STYLING */
-.services__form--container {
+.services__form__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 45px;
-  padding: 0 20px;
+  background-color: #eee;
+  padding: 15px 20px;
+  border-radius: 7px;
 }
 
-.services__form--description {
+.services__form__description {
   text-align: center;
-}
-
-.services__form--input {
-  width: 100%;
-  /* border: 1px solid red; */
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
 }
 
 .services__input {
   width: 100%;
   margin-bottom: 20px;
-  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
 .services__input input,
-.services__input textarea {
+.services__input textarea,
+.styled-select {
   width: 90%;
-  background: #eee;
+  background: #ccc;
   border-radius: 5px;
   padding: 10px;
   font-size: 14px;
@@ -105,29 +99,84 @@
   color: #333;
 }
 
-/* .services__input textarea {
+.styled-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 20px; /* Adjust the padding based on the width of your custom arrow */
+}
+
+/* Style the dropdown */
+.styled-select::-ms-expand {
+  display: none;
+}
+
+.styled-select:hover,
+.styled-select:focus {
+  border-color: #aaa;
+}
+
+.styled-select option {
+  background-color: #fff;
+  color: #333;
+}
+
+.styled-select option:checked {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.services__input textarea {
+  height: 150px;
   resize: vertical;
-} */
-
-
-.PhoneInput {
-  background: #eee;
-  width: 90%;
-  padding: 10px;
 }
 
-input[type="tel"] {
-  padding: 0;
+.services__input span {
+  color: red;
+  font-size: 15px;
 }
 
-.services__form--container button{
+.services__form__container button {
   background-color: #507b80;
   color: #eee;
-  padding: 10px 15px;
+  padding: 12px 20px;
   width: fit-content;
-  font-size: 18px;
+  font-size: 16px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
 }
 
+/* SERVICES CONTENT STYLING */
+.servicescontent__container {
+  display: flex;
+  gap: 90px;
+  padding: 100px 80px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services__content__children {
+  display: flex;
+  gap: 50px;
+}
+
+.services__content__child {
+  flex: 1;
+}
+
+.services__content__heading {
+  margin-bottom: 15px;
+  font-size: 23px;
+  color: #507b80;
+}
+
+.services__content__para {
+  font-size: 17px;
+  line-height: 34px;
+}
 
 @media only screen and (max-width: 680px) {
   .services__container {
@@ -135,7 +184,7 @@ input[type="tel"] {
     padding: 100px 20px;
   }
 
-  .services__container--bottom {
+  .services__container__bottom {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -143,67 +192,93 @@ input[type="tel"] {
     grid-row-gap: 25px;
   }
 
-  .services__icon-box {
+  .services__icon_box {
     width: 65px;
     height: 65px;
   }
 
-  .services__icon--box img {
+  .services__icon__box img {
     width: 80%;
   }
 
-  .services__container--bottom__child {
+  .services__container__bottom__child {
     padding: 15px 20px;
   }
 
   /* TYPOGRAPHY */
-  .services__container--top h2 {
+  .services__container__top h2 {
     font-size: 25px;
   }
 
-  .services__container--top p {
+  .services__container__top p {
     font-size: 16px;
   }
 
-  .services__container--bottom__child h3 {
+  .services__container__bottom__child h3 {
     font-size: 18px;
   }
 
-  .services__container--bottom__child p {
+  .services__container__bottom__child p {
     font-size: 16px;
+    line-height: 28px;
   }
 
-/* SERVICES FORM STYLING */
-.services__form--container {
-  gap: 35px;
-  padding: 0 10px;
-}
+  
 
-.services__form--description p {
-  font-size: 14px;
-  margin-top: 15px;
-}
+  /* SERVICES FORM STYLING */
+  .services__form__container {
+    gap: 35px;
+    padding: 30px 10px;
 
+  }
 
-.services__form--input {
-  width: 100%;
-}
+  .services__form__description p {
+    font-size: 14px;
+    margin-top: 15px;
+  }
 
-.services__input {
-  width: 100%;
-  padding: 0 5px;
-}
+  .services__form__input {
+    width: 100%;
+  }
 
-.services__input input,
-.services__input textarea {
-  width: 100%;
-}
+  .services__input {
+    width: 100%;
+    padding: 0 5px;
+  }
 
+  .services__input input,
+  .services__input textarea,
+  .styled-select {
+    width: 100%;
+  }
 
-.PhoneInput {
-  width: 100%;
-  padding: 10px;
-}
+  .PhoneInput {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* SERVICES CONTENT STYLING */
+  .servicescontent__container {
+    gap: 40px;
+    padding: 60px 20px;
+  }
+
+  .services__content__children {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .servicescontent__topHeading {
+    text-align: center;
+  }
+
+  .services__content__heading {
+    font-size: 22px;
+  }
+
+  .services__content__para {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 681px) {
@@ -211,8 +286,13 @@ input[type="tel"] {
     padding: 70px 70px;
   }
 
-  .services__container--bottom {
+  .services__container__bottom {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+  }
+
+  .servicescontent__container {
+    gap: 50px;
+    padding: 70px 40px;
   }
 }

@@ -94,8 +94,8 @@
   }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 700px) {
+@media screen and (max-width: 1024px) and (min-width: 900px) {
   .sideBarDrawer img {
-    width: 20%;
+    width: 40%;
   }
 }
