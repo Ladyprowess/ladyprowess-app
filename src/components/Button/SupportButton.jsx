@@ -16,9 +16,9 @@ function SupportButton({type,border, txtColor,pd, br,fs, w, bg, txt, fw,}) {
     fontSize:fs,
     border:border,
     
-    // '&:hover': {
-    //    background: hoverBG,
-    // },
+   //  '&:hover': {
+   //     background: "#fff",
+   //  },
   }));
 
     return (
