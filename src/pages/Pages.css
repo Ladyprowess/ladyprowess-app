@@ -1,0 +1,167 @@
+.privacy__container {
+    margin: 80px 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.privacy__container h2 {
+    text-align: center;
+    font-size: 29px;
+    font-weight: 600;
+    color: #507b80;
+}
+
+.privacy__description p {
+    line-height: 33px;
+    margin-bottom: 25px;
+}
+
+.privacy__description h3 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #507b80;
+    margin-bottom: 10px;
+}
+
+
+/* FAQ STYLING */
+.faq__container {
+    margin: 80px 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.faq__accordion--container {
+    margin-bottom: 20px;
+}
+
+.faq__accordion--container h3 {
+    margin-left: 10px;
+}
+
+.faq__accordion--container p,
+.contact__description--footer p {
+    line-height: 33px;
+}
+
+
+/* CONTACT STYLING */
+.contact__container {
+    display: flex;
+    gap: 50px;
+    margin: 100px 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact__image {
+    flex: 1;
+}
+
+.contact__icon{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.contact__image img {
+    width: 80%;
+}
+
+.contact__description--header h2 {
+    color: #507b80;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.contact__icon a {
+    transition: all ease-in-out 0.3s;
+}
+
+.contact__icon a:hover {
+    color: #507b80;
+}
+
+
+@media only screen and (max-width: 680px) {
+    .privacy__container,
+    .faq__container {
+        margin: 60px 20px;
+        gap: 30px;
+    }
+    
+    .privacy__container h2 {
+        font-size: 23px;
+    }
+    
+    .privacy__description p {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    
+    .privacy__description h3 {
+        font-size: 17px;
+    }
+
+    
+    .faq__accordion--container h3 {
+        margin-left: 3px;
+        font-size: 18px;
+    }
+
+    .faq__icon {
+        width: 30px;
+    }
+
+    .contact__container {
+        flex-direction: column-reverse;
+        gap: 30px;
+        margin: 80px 20px;
+    }
+
+    .contact__image {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .contact__image img {
+        width: 80%;
+    }
+    
+    .contact__description--header h2 {
+        font-size: 22px;
+    }
+
+    .faq__accordion--container p,
+    .contact__container p {
+        font-size: 15px;
+    }
+  
+
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 681px) {
+    .privacy__container,
+    .faq__container,
+    .contact__container {
+        margin: 60px 30px;
+    }
+    
+    .privacy__container h2 {
+        font-size: 25px;
+    }
+
+
+}

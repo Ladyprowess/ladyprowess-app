@@ -140,8 +140,8 @@ form button:hover {
   }
 
   .footer__links--child {
-    display: flex;
-    gap: 80px;
+    /* flex-direction: column; */
+    gap: 35px;
   }
 
   .footer__links--bold,

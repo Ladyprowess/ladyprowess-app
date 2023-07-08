@@ -24,16 +24,10 @@ const Footer = () => {
           </div>
           <div className="footer__links--child">
             <div className="footer__links--bold">
-              <Link to="/">Services</Link>
-              <Link to="/">FAQ</Link>
-              <Link to="/">Help Center</Link>
-              <a
-                href="https://ladyprowessblog.com.ng/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Blog
-              </a>
+              <Link to="/faq">FAQ</Link>
+              <Link to="/contact">Contact Us</Link>
+              <Link to="/terms-and-conditions">Terms and Conditions</Link>
+              <Link to="/privacy-policy">Privacy Policy</Link>
             </div>
             <div className="footer__links--small">
               <Link to="/services/content-marketing">Content Marketing</Link>
