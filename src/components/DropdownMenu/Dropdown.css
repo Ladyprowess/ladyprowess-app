@@ -24,15 +24,15 @@
 .css-6hp17o-MuiList-root-MuiMenu-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 20px !important;
   padding: 15px 10px !important;
-  background-color: #507b80;
-  color: #fff;
-  width: 200px;
+  background-color: #507b80 !important;
+  color: #fff !important;
+  width: 200px !important;
 }
 
 .css-6hp17o-MuiList-root-MuiMenu-list a {
-  font-family: 'Proxima Nova', Arial, sans-serif;
+  font-family: 'Proxima Nova', Arial, sans-serif !important;
   font-size: 15px !important;
 }
 

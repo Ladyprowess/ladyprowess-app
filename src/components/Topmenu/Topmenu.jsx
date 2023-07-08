@@ -74,6 +74,9 @@ function Topmenu() {
                     href="https://ladyprowessblog.com.ng/"
                     target="_blank"
                     rel="noreferrer"
+                    style={{
+                      fontSize: "18px"
+                    }}
                   >
                     Blog
                   </a>
