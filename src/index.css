@@ -205,6 +205,10 @@ button {
     line-height: 22px;
     font-size: 13px;
   }
+
+  .css-wf16b5 {
+    background-color: #507b80 !important;
+  }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 700px) {

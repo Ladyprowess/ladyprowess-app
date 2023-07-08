@@ -20,14 +20,21 @@
 }
 
 @media only screen and (max-width: 700px) {
-/* #basic-button span {
-  padding: 0 20px,
+
+.css-6hp17o-MuiList-root-MuiMenu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px 10px !important;
+  background-color: #507b80;
+  color: #fff;
+  width: 200px;
 }
 
-#basic-button span {
-  padding: 0 20px;
-  font-size: 20px;
-} */
+.css-6hp17o-MuiList-root-MuiMenu-list a {
+  font-family: 'Proxima Nova', Arial, sans-serif;
+  font-size: 15px !important;
+}
 
 }
 
