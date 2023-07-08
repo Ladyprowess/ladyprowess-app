@@ -19,7 +19,7 @@ const Banner = () => {
           Our extensive experience with renowned projects and protocols will
           impact your narrative if you allow us to work with you.
         </p>
-        <Button title="Get Started" url="/" />
+        <Button title="Get Started" url="/about" />
       </div>
      
     </div>

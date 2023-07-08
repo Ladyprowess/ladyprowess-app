@@ -41,7 +41,7 @@ export default function DropDownMenu() {
             color: "#fff"
         }}>Services</span>
         <span >
-          <BiChevronDown />
+          <BiChevronDown fill="#fff"/>
         </span>
       </div>
       <Menu

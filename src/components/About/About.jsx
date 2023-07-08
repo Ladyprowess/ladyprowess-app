@@ -24,7 +24,7 @@ const About = () => {
           craft custom content that accurately reflects your brand voice and
           appeals to your target audience.
         </p>
-        <Link to='/' className="about__button__wrapper">
+        <Link to='/about' className="about__button__wrapper">
         <button>
           Get Started
         </button>
