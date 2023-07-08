@@ -1,4 +1,4 @@
-.css-6hp17o-MuiList-root-MuiMenu-list {
+/* .css-6hp17o-MuiList-root-MuiMenu-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -6,30 +6,7 @@
     background-color: #507b80 !important;
     color: #fff !important;
     width: 200px !important;
-  }
-  
-  .css-6hp17o-MuiList-root-MuiMenu-list a {
-    font-family: 'Proxima Nova', Arial, sans-serif !important;
-    font-size: 15px !important;
-  }
-
-
-.dropdownmenu__link {
-  font-family: 'Proxima Nova', Arial, sans-serif !important;
-
-}
-
-@media only screen and (max-width: 700px) {
-
-/* .css-6hp17o-MuiList-root-MuiMenu-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px !important;
-  padding: 15px 10px !important;
-  background-color: #507b80 !important;
-  color: #fff !important;
-  width: 200px !important;
-} */
+  } */
 
 .css-r8u8y9 {
   display: flex;
@@ -38,14 +15,31 @@
   padding: 15px 10px !important;
   background-color: #507b80 !important;
   color: #fff !important;
-  width: 200px !important;
+  width: 300px !important;
 }
 
 .css-6hp17o-MuiList-root-MuiMenu-list a {
-  font-family: 'Proxima Nova', Arial, sans-serif !important;
+  font-family: "Proxima Nova", Arial, sans-serif !important;
   font-size: 15px !important;
 }
 
+.dropdownmenu__link {
+  font-family: "Proxima Nova", Arial, sans-serif !important;
 }
 
+@media only screen and (max-width: 700px) {
+  .css-r8u8y9 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px !important;
+    padding: 15px 10px !important;
+    background-color: #507b80 !important;
+    color: #fff !important;
+    width: 200px !important;
+  }
 
+  .css-6hp17o-MuiList-root-MuiMenu-list a {
+    font-family: "Proxima Nova", Arial, sans-serif !important;
+    font-size: 15px !important;
+  }
+}
