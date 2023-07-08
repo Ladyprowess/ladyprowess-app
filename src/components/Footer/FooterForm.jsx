@@ -49,7 +49,6 @@ const FooterForm = () => {
 
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
-  const [message, setMessage] = useState("");
 
   const handleInput = (e) => {
     setName(e.target.value);

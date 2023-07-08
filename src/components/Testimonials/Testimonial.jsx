@@ -1,8 +1,5 @@
 import React from "react";
 import "./Testimonial.css";
-import natasha1 from "../../assets/images/Ellipse 6.png";
-import natasha2 from "../../assets/images/Ellipse 7.png";
-import natasha3 from "../../assets/images/Ellipse 8.png";
 import { BsStarFill, BsStarHalf } from "react-icons/bs";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";

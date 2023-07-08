@@ -138,7 +138,7 @@ export default function Sidebar() {
               location.pathname === "" ? "linksContLinkActive" : "linksContLink"
             }
           > */}
-          <a
+          {/* <a
             href="https://ladyprowessblog.com.ng/"
             target="_blank"
             rel="noreferrer"
@@ -147,7 +147,7 @@ export default function Sidebar() {
             }
           >
             Blog
-          </a>
+          </a> */}
 
           {/* </ListItemText> */}
         </ListItem>

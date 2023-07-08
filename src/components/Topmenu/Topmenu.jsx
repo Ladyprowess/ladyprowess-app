@@ -70,7 +70,7 @@ function Topmenu() {
                   >
                     Blog
                   </span> */}
-                  <a
+                  {/* <a
                     href="https://ladyprowessblog.com.ng/"
                     target="_blank"
                     rel="noreferrer"
@@ -79,7 +79,7 @@ function Topmenu() {
                     }}
                   >
                     Blog
-                  </a>
+                  </a> */}
 
                   <SupportButton
                     type="button"
