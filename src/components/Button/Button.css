@@ -15,8 +15,9 @@
 
 
 .css-14hrqua:hover {
-    background-color: transparent !important;
-    color: #507B80 !important;
+    background-color: #507B80 !important;
+    color: #fff !important;
+    transform: scale(0.9) !important;
 }
 
 @media only screen and (max-width: 680px) {
