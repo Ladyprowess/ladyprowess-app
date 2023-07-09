@@ -4,6 +4,7 @@ import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
 import Backdrop from "@mui/material/Backdrop";
 import Fade from "@mui/material/Fade";
+import './Services.css'
 
 const style = {
   position: "absolute",
@@ -26,15 +27,17 @@ const style = {
 
   // Set maximum height to 80% of viewport height
 
-  "@media (max-width: 768px)": {
+
+"@media screen and (max-width: 1024px) and (min-width: 577px)": {
     width: "90%",
-    p: 2,
     maxHeight: "90vh",
+    p: '70px 15px',
   },
 
   "@media (max-width: 576px)": {
     width: "90%",
-    maxHeight: "95vh", // Adjust maximum height for even smaller screens
+    maxHeight: "95vh",
+    p: '70px 15px', // Adjust maximum height for even smaller screens
   },
 };
 
